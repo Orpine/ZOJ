@@ -1,3 +1,11 @@
+//
+//  1423.cpp
+//  Workspace
+//
+//  Created by Orpine on 13-11-9.
+//  Copyright (c) 2013年 Orpine. All rights reserved.
+//
+
 //Header
 #include <cstdio>
 #include <cstdlib>
@@ -5,6 +13,7 @@
 #include <cmath>
 #include <ctime>
 
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <set>
@@ -31,6 +40,5 @@ const double eps = 1e-6;
 //Program
 int main()
 {
-    
     return 0; 
 }
