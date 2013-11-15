@@ -1,6 +1,6 @@
 //
-//  1423.cpp
-//  Workspace
+//  .cpp
+//  Code for ZOJ
 //
 //  Created by Orpine on 13-11-9.
 //  Copyright (c) 2013年 Orpine. All rights reserved.
