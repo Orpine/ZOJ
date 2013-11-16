@@ -75,28 +75,28 @@ void Work()
         v[i].clear();
     }
     memset(indeg, 0, sizeof indeg);
-	char x, y;
+	char x, y, ch[10];
     int ret;
 	for (int i = 1; i <= m; i++) {
-		scanf("%c<%c%*c", &x, &y);
-		x -= 'A', y -= 'A';
+        scanf("%s", ch);
+        x = ch[0] - 'A', y = ch[2] - 'A';
 		indeg[y]++;
 		v[x].push_back(y);
         ret = Topo();
 		if (ret == -1) {
 			printf("Inconsistency found after %d relations.\n", i);
 			for (int j = i + 1; j <= m; j++) {
-                scanf("%c<%c%*c", &x, &y);
+                scanf("%s", ch);
             }
             return;
 		} else if (ret == 0) {
-            printf("Sorted sequence determined after %d relations:", i);
+            printf("Sorted sequence determined after %d relations: ", i);
             for(int i = 1; i <= n; i++) {
                 printf("%c", seq[i] + 'A');
             }
             printf(".\n");
 			for (int j = i + 1; j <= m; j++) {
-                scanf("%c<%c%*c", &x, &y);
+                scanf("%s", ch);
             }
             return;
         }
@@ -107,7 +107,7 @@ int main()
 {
 	while(1)
 	{
-		scanf("%d%d%*c", &n, &m);
+		scanf("%d%d", &n, &m);
 		if(n == 0 && m == 0)
 			break;
 		Work();
